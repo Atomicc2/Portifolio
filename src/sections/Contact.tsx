@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
-import { GitHubIcon, LinkedInIcon } from "../components/icons";
+import { GitHubIcon, LinkedInIcon, WhatsAppIcon } from "../components/icons";
+import { useState } from "react";
 
 const contacts = [
   {
@@ -15,6 +16,12 @@ const contacts = [
     Icon: LinkedInIcon,
   },
   {
+    label: "WhatsApp",
+    href: "https://wa.me/5579996758109",
+    text: "(79) 99675-8109",
+    Icon: WhatsAppIcon,
+  },
+  {
     label: "E-mail",
     href: "mailto:andersonacpemp@gmail.com",
     text: "andersonacpemp@gmail.com",
@@ -22,7 +29,39 @@ const contacts = [
   },
 ];
 
+// ⚠️ Substitua abaixo pelo endpoint do seu Formspree (formspree.io)
+// Exemplo: https://formspree.io/f/xyz123
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/seu-aqui";
+
 export default function Contact() {
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
+    "idle"
+  );
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+
+    const formData = new FormData(e.target as HTMLFormElement);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <section id="contato" className="mx-auto max-w-6xl px-5 py-20">
       <div className="flex flex-col lg:flex-row gap-12 items-start lg:items-center">
@@ -32,16 +71,15 @@ export default function Contact() {
             <h2 className="font-display text-3xl font-bold">Contato</h2>
             <p className="mt-3 max-w-prose text-muted">
               Para falar sobre vagas ou sobre qualquer um dos projetos, escreva
-              por e-mail, LinkedIn ou preencha o formulário abaixo.
+              por e-mail, LinkedIn, WhatsApp ou preencha o formulário abaixo.
             </p>
           </div>
 
           <form
+            action={FORMSPREE_ENDPOINT}
+            method="POST"
             className="space-y-4"
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Mensagem enviada com sucesso! (simulação)");
-            }}
+            onSubmit={handleSubmit}
           >
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="flex flex-col">
@@ -132,10 +170,22 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="rounded-md bg-accent px-6 py-3 font-semibold text-bg transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg"
+              disabled={status === "sending"}
+              className="rounded-md bg-accent px-6 py-3 font-semibold text-bg transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Enviar mensagem
+              {status === "sending" ? "Enviando..." : "Enviar mensagem"}
             </button>
+
+            {status === "success" && (
+              <p className="mt-3 text-sm text-accent font-semibold">
+                Mensagem enviada com sucesso! Entrarei em contato em breve.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="mt-3 text-sm text-red-400 font-semibold">
+                Erro ao enviar. Tente novamente ou use o e-mail/WhatsApp direto.
+              </p>
+            )}
           </form>
         </div>
 
@@ -173,3 +223,4 @@ export default function Contact() {
     </section>
   );
 }
+

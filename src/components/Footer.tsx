@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import { GitHubIcon, LinkedInIcon } from "./icons";
+import { GitHubIcon, LinkedInIcon, WhatsAppIcon } from "./icons";
 
 const footerLinks = [
   { href: "#sobre", label: "Sobre" },
@@ -15,6 +15,7 @@ const socials = [
     Icon: LinkedInIcon,
     label: "LinkedIn",
   },
+  { href: "https://wa.me/5579996758109", Icon: WhatsAppIcon, label: "WhatsApp" },
   { href: "mailto:andersonacpemp@gmail.com", Icon: Mail, label: "E-mail" },
 ];
 
