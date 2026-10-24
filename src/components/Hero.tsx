@@ -9,7 +9,7 @@ export default function Hero() {
         >
           <div className="relative inline-block">
             <img
-              src="/Imagens/Minha_Foto.jpeg"
+              src="/Imagens/Minha_Foto_sem_fundo.png"
               alt="Foto de Anderson Santana"
               className="rounded-2xl shadow-2xl border border-line/50 w-64 h-64 sm:w-80 sm:h-80 object-cover"
             />
