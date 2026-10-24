@@ -31,7 +31,7 @@ const contacts = [
 
 // ⚠️ Substitua abaixo pelo endpoint do seu Formspree (formspree.io)
 // Exemplo: https://formspree.io/f/xyz123
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/seu-aqui";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/myeezygg";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
