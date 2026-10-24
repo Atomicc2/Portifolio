@@ -1,5 +1,4 @@
 const stats = [
-  { label: "Anos de experiência", value: "3+" },
   { label: "Projetos entregues", value: "20+" },
   { label: "Tecnologias", value: "15+" },
   { label: "Disponibilidade", value: "Imediata" },
@@ -13,14 +12,17 @@ export default function About() {
           <h2 className="font-display text-3xl font-bold">Sobre mim</h2>
           <div className="mt-6 max-w-prose space-y-4 text-ink/90">
             <p>
-              Curso Sistemas de Informação na Universidade Federal de Sergipe
-              (UFS). Parte dos meus projetos veio de disciplinas, como estruturas
-              de dados, banco de dados e teoria da computação. O resto são projetos
-              próprios, como o AuthStack e o WalletLedger.
+              Estudante de Sistemas de Informação na Universidade Federal de
+              Sergipe (UFS) com foco em desenvolvimento backend e full stack com
+              Java e Spring Boot. Experiência prática em APIs REST, autenticação
+              com Spring Security e JWT, modelagem de dados em PostgreSQL,
+              containerização com Docker e deploy na AWS. Desenvolvo sistemas com
+              atenção à consistência transacional e à arquitetura em camadas,
+              e utilizo agentes de código com IA para acelerar a entrega,
+              revisando criticamente o código gerado.
             </p>
             <p>
-              Tenho mais experiência com Java e Spring Boot, mas também uso
-              TypeScript com Angular e React, e Python quando o problema pede.
+              Busco estágio em desenvolvimento backend ou full stack.
             </p>
           </div>
         </div>

@@ -23,10 +23,11 @@ export default function Hero() {
             Anderson S.
           </h1>
           <p className="rise rise-3 mt-6 max-w-xl border-l-2 border-accent pl-5 text-lg text-ink/90">
-            Estudo Sistemas de Informação na UFS e gosto de trabalhar com a parte
-            do servidor: APIs, banco de dados e autenticação. Trabalho
-            principalmente com Java e Spring Boot e estou buscando estágio ou vaga
-            júnior em fullstack.
+            Estudante de Sistemas de Informação (UFS) com foco em desenvolvimento
+            backend e full stack com Java e Spring Boot. Experiência prática em
+            APIs REST, autenticação com Spring Security e JWT, modelagem de dados
+            em PostgreSQL, containerização com Docker e deploy na AWS. Busco estágio
+            em desenvolvimento backend ou full stack.
           </p>
           <div className="rise rise-3 mt-8 flex flex-wrap gap-3">
             <a
