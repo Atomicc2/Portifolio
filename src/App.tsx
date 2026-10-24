@@ -6,7 +6,6 @@ import Skills from "./sections/Skills";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Services from "./sections/Services";
-import Testimonials from "./sections/Testimonials";
 
 export default function App() {
   return (
@@ -17,7 +16,6 @@ export default function App() {
         <Services />
         <Projects />
         <Skills />
-        <Testimonials />
         <About />
         <Contact />
       </main>

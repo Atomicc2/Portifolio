@@ -109,6 +109,67 @@ O repositório já está configurado e logado na conta do GitHub. Para acessar o
 - `git clone git@github.com:Anderson-S/<repositorio>.git` — clonar um repositório
 - `gh auth status` — verificar autenticação do GitHub CLI (se instalado)
 
+## Plano de Atualização baseado no currículo.md
+
+O arquivo `curriculo.md` (cópia do PDF `Anderson_Santana_CV.pdf`) contém as informações atualizadas que devem ser refletidas no portfólio. Abaixo o plano de ajustes:
+
+### Dados pessoais (já corretos no site)
+- Nome: Anderson Santana ✅
+- E-mail: andersonacpemp@gmail.com ✅
+- LinkedIn: linkedin.com/in/anderson-santana-b99896351 ✅
+- GitHub: github.com/Atomicc2 ✅ (corrigido para Atomicc2)
+- Localização: Sergipe, Brasil ✅ (não está explícito no site, pode adicionar)
+
+### Perfil profissional
+- Título: "Desenvolvedor Full Stack" (site já atualizado para "Fullstack") ✅
+- Resumo: estudante de SI na UFS, foco backend/fullstack com Java, Spring Boot, APIs REST, Spring Security, JWT, PostgreSQL, Docker, AWS. Busca estágio backend ou fullstack. (precisa ser incorporado na seção Sobre/Hero)
+
+### Experiência (NOVO — não está no site)
+- **Desenvolvedor Front-End (Voluntário) — ItatechJr — 2025 – Presente**
+  - Interfaces web com HTML, CSS, JavaScript
+  - Layouts responsivos e UI/UX
+  - Git/GitHub
+  - Migração para mobile (+30% acessos)
+  - Figma para protótipos UI
+  - ClickUp/Jira para gestão de tarefas
+- **Ação:** Criar seção "Experiência" ou adicionar ao "Sobre mim".
+
+### Formação (já está parcialmente no site)
+- Universidade Federal de Sergipe (UFS) — Bacharelado em Sistemas de Informação ✅ (está no About)
+
+### Projetos (atualizar com dados do currículo.md)
+Projetos listados no currículo:
+1. **WalletLedger — Carteira Digital** (2025–Presente) ✅ já no site
+   - github.com/Atomicc2/WalletLedger
+   - wallet-ledger-liard.vercel.app
+   - Ledger de partida dobrada, idempotência, CompletableFuture, PostgreSQL ACID, Docker
+2. **AutoLabTC — Plataforma Web de Autômatos** ✅ já no site
+   - github.com/Atomicc2/AutoLabTC
+   - Cytoscape.js, visualização em grafo, salvamento/exportação
+3. **API REST com Deploy na AWS** ✅ já no site (como "API REST Eventos")
+   - github.com/Atomicc2/javaEventTecApi
+   - CRUD, paginação, filtros, JPA/Hibernate, Amazon S3, AWS EC2
+
+**Ação:** Atualizar resumos e highlights dos projetos no `src/data/projects.ts` com base nos detalhes do currículo.md.
+
+### Habilidades técnicas (atualizar Skills)
+Lista do currículo:
+Java, TypeScript, JavaScript, SQL, Python, C, Spring Data JPA, Hibernate, JWT, C++, Spring Boot, Spring Security, APIs REST, Arquitetura MVC, Maven, HTML, CSS, Tailwind CSS, PostgreSQL, MySQL, Angular, React, AWS (EC2, S3, RDS), Docker, Docker Compose, Linux, Git, GitHub, Postman, Agentes de código no terminal, Prompt Engineering, Revisão de código gerado por IA.
+
+Certificações:
+- Java (Básico e Intermediário) - Loiane Gronner, 2025
+- Spring Boot e Estrutura de Dados - Loiane Gronner, 2025
+- Angular 21 - Loiane Gronner, 2025
+- CS50x: Introduction to Computer Science - Harvard University, 2025
+
+**Ação:** Atualizar `src/data/skills.ts` com essas tecnologias e adicionar certificações se relevante.
+
+### Remoção da seção "O que os clientes dizem" (Testimonials)
+- Os depoimentos foram criados como placeholders fictícios.
+- **Decisão:** não excluir os arquivos (`src/data/testimonials.ts`, `src/components/TestimonialCard.tsx`, `src/sections/Testimonials.tsx`).
+- **Ação:** remover apenas a importação e renderização do `<Testimonials />` do `src/App.tsx`, deixando a seção fora do ar até que existam depoimentos reais.
+- Arquivos permanecem no repositório para uso futuro.
+
 ## Regras gerais
 
 - Todas as alterações devem ser feitas em português Brasileiro nos comentários e textos visíveis quando aplicável.
