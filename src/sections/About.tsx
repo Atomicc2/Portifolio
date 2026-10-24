@@ -1,7 +1,7 @@
 const stats = [
   { label: "Anos de experiência", value: "3+" },
-  { label: "Projetos entregues", value: "4+" },
-  { label: "Tecnologias", value: "8+" },
+  { label: "Projetos entregues", value: "20+" },
+  { label: "Tecnologias", value: "15+" },
   { label: "Disponibilidade", value: "Imediata" },
 ];
 

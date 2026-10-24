@@ -4,8 +4,8 @@ import { GitHubIcon, LinkedInIcon } from "../components/icons";
 const contacts = [
   {
     label: "GitHub",
-    href: "https://github.com/Anderson-S",
-    text: "github.com/Anderson-S",
+    href: "https://github.com/Atomicc2",
+    text: "github.com/Atomicc2",
     Icon: GitHubIcon,
   },
   {
@@ -164,7 +164,7 @@ export default function Contact() {
           <div className="rounded-xl border border-line bg-surface p-6">
             <h3 className="font-display text-lg font-bold mb-3">Disponibilidade</h3>
             <p className="text-muted text-sm leading-relaxed">
-              Disponível para estágio ou vaga júnior em backend. Resposta em até
+              Disponível para estágio ou vaga júnior em fullstack. Resposta em até
               24 horas.
             </p>
           </div>

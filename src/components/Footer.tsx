@@ -9,7 +9,7 @@ const footerLinks = [
 ];
 
 const socials = [
-  { href: "https://github.com/Anderson-S", Icon: GitHubIcon, label: "GitHub" },
+  { href: "https://github.com/Atomicc2", Icon: GitHubIcon, label: "GitHub" },
   {
     href: "https://www.linkedin.com/in/anderson-santana-b99896351",
     Icon: LinkedInIcon,
@@ -28,7 +28,7 @@ export default function Footer() {
               Anderson S.
             </a>
             <p className="mt-2 text-sm text-muted max-w-sm">
-              Desenvolvedor backend focado em Java, Spring Boot e APIs robustas.
+              Desenvolvedor Fullstack focado em Java, Spring Boot e APIs robustas.
             </p>
           </div>
 
@@ -70,8 +70,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-ink mb-3">Disponível para</h4>
             <ul className="space-y-2 text-sm text-muted">
-              <li>Estágio · Backend</li>
-              <li>Vaga Júnior · Backend</li>
+              <li>Estágio · Fullstack</li>
+              <li>Vaga Júnior · Fullstack</li>
               <li>Freelance · APIs REST</li>
             </ul>
           </div>

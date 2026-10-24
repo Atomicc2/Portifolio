@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
 
         <div className="rise rise-2 sm:col-span-6 order-1 sm:order-2">
-          <p className="text-muted">Desenvolvedor backend</p>
+          <p className="text-muted">Desenvolvedor Fullstack</p>
           <h1 className="mt-3 font-display text-6xl font-bold leading-none tracking-tight sm:text-8xl">
             Anderson S.
           </h1>
@@ -26,7 +26,7 @@ export default function Hero() {
             Estudo Sistemas de Informação na UFS e gosto de trabalhar com a parte
             do servidor: APIs, banco de dados e autenticação. Trabalho
             principalmente com Java e Spring Boot e estou buscando estágio ou vaga
-            júnior em backend.
+            júnior em fullstack.
           </p>
           <div className="rise rise-3 mt-8 flex flex-wrap gap-3">
             <a
@@ -36,7 +36,7 @@ export default function Hero() {
               Ver projetos
             </a>
             <a
-              href="https://github.com/Anderson-S"
+              href="https://github.com/Atomicc2"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-line px-5 py-2.5 font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
