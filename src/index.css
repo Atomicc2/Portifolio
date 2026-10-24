@@ -1,12 +1,19 @@
 @import "tailwindcss";
 
 @theme {
+  /* Cores principais */
   --color-bg: #0f1416;
   --color-surface: #151c1f;
   --color-line: #243036;
   --color-ink: #e7eeef;
   --color-muted: #8c9ca0;
+
+  /* Cor de destaque (teal) — altere aqui para mudar a identidade visual do site */
   --color-accent: #2dd4bf;
+  --color-accent-hover: #5beecf;
+  --color-accent-muted: rgba(45, 212, 191, 0.15);
+
+  /* Tipografia */
   --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --font-sans: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
 }
