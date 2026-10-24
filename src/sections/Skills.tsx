@@ -1,4 +1,4 @@
-import { skills, skillCategories } from "../data/skills";
+import { skills, skillCategories, certifications } from "../data/skills";
 
 const Icons: Record<string, JSX.Element> = {
   database: (
@@ -106,6 +106,26 @@ export default function Skills() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Certificações */}
+      <div className="mt-12">
+        <h3 className="font-display text-2xl font-bold mb-6 text-center">
+          Certificações
+        </h3>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {certifications.map((c) => (
+            <div
+              key={c.name}
+              className="rounded-xl border border-line bg-surface p-4 text-center"
+            >
+              <p className="font-semibold text-ink">{c.name}</p>
+              <p className="text-sm text-muted">
+                {c.issuer} · {c.year}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
