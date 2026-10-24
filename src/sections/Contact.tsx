@@ -4,8 +4,8 @@ import { GitHubIcon, LinkedInIcon } from "../components/icons";
 const contacts = [
   {
     label: "GitHub",
-    href: "https://github.com/Atomicc2",
-    text: "github.com/Atomicc2",
+    href: "https://github.com/Anderson-S",
+    text: "github.com/Anderson-S",
     Icon: GitHubIcon,
   },
   {

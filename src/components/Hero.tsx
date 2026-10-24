@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="rise rise-2 sm:col-span-6 order-1 sm:order-2">
           <p className="text-muted">Desenvolvedor backend</p>
           <h1 className="mt-3 font-display text-6xl font-bold leading-none tracking-tight sm:text-8xl">
-            Atomicc2
+            Anderson S.
           </h1>
           <p className="rise rise-3 mt-6 max-w-xl border-l-2 border-accent pl-5 text-lg text-ink/90">
             Estudo Sistemas de Informação na UFS e gosto de trabalhar com a parte
@@ -36,7 +36,7 @@ export default function Hero() {
               Ver projetos
             </a>
             <a
-              href="https://github.com/Atomicc2"
+              href="https://github.com/Anderson-S"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-line px-5 py-2.5 font-semibold text-ink transition-colors hover:border-accent hover:text-accent"

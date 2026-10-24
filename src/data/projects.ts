@@ -10,7 +10,7 @@ export type Project = {
   status?: string;
 };
 
-const gh = (repo: string) => `https://github.com/Atomicc2/${repo}`;
+const gh = (repo: string) => `https://github.com/Anderson-S/${repo}`;
 
 export const projects: Project[] = [
   {

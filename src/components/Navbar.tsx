@@ -13,7 +13,7 @@ export default function Navbar() {
         className="mx-auto flex max-w-4xl items-center justify-between px-5 py-3.5"
       >
         <a href="#topo" className="font-display text-lg font-bold text-ink">
-          Atomicc2
+          Anderson S.
         </a>
         <ul className="flex gap-4 text-sm text-muted sm:gap-6">
           {links.map((l) => (
